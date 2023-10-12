@@ -7,9 +7,9 @@
     <meta name="description" content="Продажи металлоизделий">
     <meta name="keywords" content="Продажи, купол, металлы">
 
-    <link rel="stylesheet" href="../This sait_0/CSS/stil_shapka.CSS">
+    <link rel="stylesheet" href="../CSS/stil_shapka.CSS">
     <title> Magazin </title>
-    <link rel="icon" type="image/x-icon" href="../This sait_0/A_IMG/jk_35.png">
+    <link rel="icon" type="image/x-icon" href="../A_IMG/jk_35.png">
 </head>
 <body>
     <h1>
@@ -59,7 +59,7 @@
                     Выбранные товары
                 </div>
 
-                <img src="../This sait_0/A_IMG/jk_20.png" alt="err" class="im_0">
+                <img src="../A_IMG/jk_20.png" alt="err" class="im_0">
                 <ul class="chec">
                     <li> Посмотреть полностью</li>
                     <li> Общая стоймость:<span id="S_0"> 0 </span> </li>
@@ -80,7 +80,7 @@
                     <br> При покупке или ремонте качество металлоизделий проверяеться при заказчике лично мастером.
                     <br> Наши сварщики и слесаря уже выполнили 1345 выездных работ. Вызов можно совершить в любое 
                     время суток.
-                    <br><img src="../This sait_0/A_IMG/jk_30.png" alt="err" class="im_1"><br>
+                    <br><img src="../A_IMG/jk_30.png" alt="err" class="im_1"><br>
                     Наши контакты:
                     <br>Адрес: Бузулукский район. купол.
                     <br>Тел: 8(930) 347-12-80
@@ -91,7 +91,7 @@
             <div class="metal">
 
                 <div data-bi="0">
-                    <img src="../This sait_0/A_IMG/cypol_0.png">
+                    <img src="../A_IMG/cypol_0.png">
                     <br> Стоймость: 3000 руб.
                     <br> Описание:
                     <br> Небольшой железный ящик с инструментами (инструменты можно купить отдельно).
@@ -99,7 +99,7 @@
                 </div>
 
                 <div data-bi="1">
-                    <img src="../This sait_0/A_IMG/cypol_1.png">
+                    <img src="../A_IMG/cypol_1.png">
                     <br> Стоймость: 5000 руб.
                     <br> Описание:
                     <br> Задвижка хорошего качества для всего.
@@ -107,7 +107,7 @@
                 </div>
 
                 <div data-bi="2">
-                    <img src="../This sait_0/A_IMG/cypol_2.png">
+                    <img src="../A_IMG/cypol_2.png">
                     <br> Стоймость: 100 руб/1 шт.
                     <br> Описание:
                     <br> Шпильки. Все имееться 314 штук.
@@ -115,7 +115,7 @@
                 </div>
 
                 <div data-bi="3">
-                    <img src="../This sait_0/A_IMG/cypol_3.png">
+                    <img src="../A_IMG/cypol_3.png">
                     <br> Стоймость: 1000 руб/за метр.
                     <br> Описание:
                     <br> Железные трубы для хозяйственного пользования.
