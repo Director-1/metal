@@ -1,1 +1,199 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Продажи металлоизделий">
+    <meta name="keywords" content="Продажи, купол, металлы">
+
+    <link rel="stylesheet" href="../This sait_0/CSS/stil_shapka.CSS">
+    <title> Magazin </title>
+    <link rel="icon" type="image/x-icon" href="../This sait_0/A_IMG/jk_35.png">
+</head>
+<body>
+    <h1>
+        Предприятие по обработки, ремонту, продажи металлоизделий "ЧВК Купол"
+        <br>
+        <p class="pod_0">
+            Оказываем услуги быстро, качественно, недорого<br>
+            во всём бузулукском районе
+        </p>
+    </h1>
+
+    <div class="main">
+        <div class="navigator">
+
+            <div class="pagin_0 bacg_0">
+                <div class="podp">
+                    Основное
+                </div>
+                
+                <ul class="sp" id="s_0">
+                    <li>
+                        <a href="#" class="sil" data-ni="0"> Главная </a>
+                    </li>
+                    <li> 
+                        <a href="#" class="sil" data-ni="1"> Металлоизделия  </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pagin_0 bacg_1">
+                <div class="podp">
+                    Уголок покупателя
+                </div>
+
+                <ul class="sp" id="s_1">
+                    <li>
+                        <a href="#" class="sil" data-ni="2"> Отзывы </a>
+                    </li>
+                    <li> 
+                        <a href="#" class="sil" data-ni="3"> Жалобы </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div  class="korzina pagin_0">
+                <div class="podp">
+                    Выбранные товары
+                </div>
+
+                <img src="../This sait_0/A_IMG/jk_20.png" alt="err" class="im_0">
+                <ul class="chec">
+                    <li> Посмотреть полностью</li>
+                    <li> Общая стоймость:<span id="S_0"> 0 </span> </li>
+                    <li> Общие колличество:<span id="S_1"> 0 </span></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <section class="cont">
+
+            <div class="glavnai">
+                <h2 class="zag"> Приветствуем вас на нашем сайте! </h2>
+                <p class="discrept">
+                    Мы молодая начинающая компания с многомилионным капиталом. Только за первый год работы
+                    мы получили прибыль около 1 млн. долларов.
+                    <br> За наше качество мы получили широкий спрос по всему Бузулукскому району
+                    <br> При покупке или ремонте качество металлоизделий проверяеться при заказчике лично мастером.
+                    <br> Наши сварщики и слесаря уже выполнили 1345 выездных работ. Вызов можно совершить в любое 
+                    время суток.
+                    <br><img src="../This sait_0/A_IMG/jk_30.png" alt="err" class="im_1"><br>
+                    Наши контакты:
+                    <br>Адрес: Бузулукский район. купол.
+                    <br>Тел: 8(930) 347-12-80
+                    <br>Режим работы: круглосуточно
+                </p>
+            </div>
+
+            <div class="metal">
+
+                <div data-bi="0">
+                    <img src="../This sait_0/A_IMG/cypol_0.png">
+                    <br> Стоймость: 3000 руб.
+                    <br> Описание:
+                    <br> Небольшой железный ящик с инструментами (инструменты можно купить отдельно).
+                    <br> Торг уместен.
+                </div>
+
+                <div data-bi="1">
+                    <img src="../This sait_0/A_IMG/cypol_1.png">
+                    <br> Стоймость: 5000 руб.
+                    <br> Описание:
+                    <br> Задвижка хорошего качества для всего.
+                    <br> Торг уместен.
+                </div>
+
+                <div data-bi="2">
+                    <img src="../This sait_0/A_IMG/cypol_2.png">
+                    <br> Стоймость: 100 руб/1 шт.
+                    <br> Описание:
+                    <br> Шпильки. Все имееться 314 штук.
+                    <br> Торг уместен.
+                </div>
+
+                <div data-bi="3">
+                    <img src="../This sait_0/A_IMG/cypol_3.png">
+                    <br> Стоймость: 1000 руб/за метр.
+                    <br> Описание:
+                    <br> Железные трубы для хозяйственного пользования.
+                    <br> Торг уместен.
+                </div>
+
+            </div>
+
+            <div class="otziv">
+                Отзывов нет
+            </div>
+
+            <div class="zaloba">
+                Жалоб нет
+            </div>
+        </section>
+    </div>
+
+    <footer class="fyt">
+
+    </footer>
+
+    <script>
+        let r = document.querySelector('#s_0');
+        let r_0 = document.querySelector('#s_1');
+
+        let main = document.querySelector('.cont');
+        let id = 0;
+
+        main = Array.from(main.children);
+        for (let x of main) {
+            x.style.display = 'none';
+        }
+        main[id].style.display = "";
+
+        function der(x) {
+            if (x.tagName == 'A') {
+               main[id].style.display = 'none';
+               id = x.getAttribute('data-ni');
+               main[id].style.display = "";
+            }
+        }
+
+        r.addEventListener('click', function(event) {
+            der(event.target);
+        });
+        r_0.addEventListener('click', function(event) {
+            der(event.target);
+        });
+
+        /* Корзина */
+        let met = document.querySelector('.metal');
+        let tov = Array.from(met.children);
+
+        let sum_val = 0;
+        let sum_dol = 0;
+
+        let cen = [3000, 5000, 100, 1000];
+        met.addEventListener('click', function(event) {
+            w = event.target;
+            if (w.tagName == 'IMG') {
+                w = w.parentNode;
+            }
+           if (w.firstElementChild.tagName == 'IMG') {
+                sum_dol += cen[w.getAttribute('data-bi')];
+                
+                if (cen[w.getAttribute('data-bi')] > 0) {
+                    w.style.backgroundColor = "green";
+                    sum_val++;
+                } else {
+                    w.style.backgroundColor = "";
+                    sum_val--;
+                }
+                S_0.innerHTML = sum_dol;
+                S_1.innerHTML = sum_val;
+                cen[w.getAttribute('data-bi')] = ~cen[w.getAttribute('data-bi')] + 1;
+           }
+        });
+    </script>
+</body>
+</html>
