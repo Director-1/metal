@@ -1,0 +1,231 @@
+/* медиа запрос и переменные */
+@media screen and (max-width: 800px) {
+    :root {
+        /* навигация */
+        --navigator_width: 100%;
+        --navigator_heign: 50px;
+
+        --navigator_border_right: none;
+        --navigator_border_bottom: 2px solid black;
+
+        --navigator_bacgraunt_color: rgb(155, 155, 155);
+
+        --navigato_line-height: 50px;
+        /* кнопки навигации*/
+        --pagin_0_width: 30px;
+        --pagin_0_heige: 30px;
+        --pagin_border: 2px solid black;
+        --pagin_disp: inline-block;
+        --pagin_margin: 8px 4px 0 10px;
+        /* боковое меню */
+        --displei_spisk: none;
+        --margin_spisk: 0;
+        /* изображение */
+        --img_width: 30px;
+        --img_heign: 30px;
+        /* основной контент */
+        --main_margin: 0;
+        --main_width: 100%;
+        --flex_main: block;
+
+        --img_bac_0: url("../A_IMG/jk_8.png");
+        --img_bac_1: url("../A_IMG/jk_9.png");
+    }
+
+    /* классы */
+    .pagin_0:hover .sp {
+        display: block;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
+    }
+    .korzina:hover .chec {
+        background-color: blanchedalmond;
+        display: block;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
+    }
+}
+@media screen and (min-width: 800px) {
+    :root {
+        /* навигация */
+        --navigator_width: auto;
+        --navigator_heign: 100vh;
+
+        --navigator_border_right: 2px solid black;
+        --navigator_border_bottom: none;
+
+        --navigator_bacgraunt_color: none;
+
+        --navigato_line-height: auto;
+        /* кнопки навигации*/
+        --pagin_0_width: auto;
+        --pagin_0_heige: auto;
+        --pagin_border: none;
+        --pagin_disp: block;
+        --pagin_margin: 0;
+        /* боковое меню */
+        --displei_spisk: block;
+        --margin_spisk: 15px;
+        /* изображение */
+        --img_width: auto;
+        --img_heign: auto;
+        /* основной контент */
+        --main_margin: 280px;
+        --main_width: calc(100% - 280px);
+        --flex_main: flex;
+
+        --img_bac_0: none;
+        --img_bac_1: none;
+    }
+}
+
+html, body {
+    margin: 0;
+}
+/* шапка */
+h1 {
+    text-align: center;
+    border-bottom: 3px solid black;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0) -10%, rgba(250,250,250,0.75) 50%, rgba(0,0,0,0.0) 110%),
+    url("../A_IMG/zadv_2.png"),
+    url("../A_IMG/zadv_1.png"),
+    url("../A_IMG/zadv_0.png"),
+    url("../A_IMG/metal_1.png");
+    background-repeat: repeat, no-repeat, no-repeat, no-repeat;
+    background-position: left, calc(5%), calc(50%), calc(95%);
+
+    margin: 0;
+    padding-top: 20px;
+}
+
+.pod_0 {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 0.7em;
+    line-height: 1.2;
+}
+/* основное тело */
+.main {
+    display: var(--flex_main);
+}
+/* навигатор */
+.navigator {
+    width: var(--navigator_width);
+    height: var(--navigator_heign);
+
+    border-right: var(--navigator_border_right);
+    border-bottom: var(--navigator_border_bottom);
+    background-color: var(--navigator_bacgraunt_color);
+
+    position: sticky;
+    line-height: var(--navigato_line-height);
+    top: 0;
+}
+.bacg_0 {
+    background-image: var(--img_bac_0);
+}
+.bacg_1 {
+    background-image: var(--img_bac_1);
+}
+.pagin_0 {
+    width: var(--pagin_0_width);
+    height: var(--pagin_0_heige);
+    border: var(--pagin_border);
+    display: var(--pagin_disp);
+    margin: var(--pagin_margin);
+    border-radius: 5px;
+}
+/* основное меню */
+
+.sp {
+    display: var(--displei_spisk);
+    width: 280px;
+    padding: 0;
+    margin-top: 0;
+}
+
+.podp {
+    text-align: center;
+    font-size: 1.2em;
+    display: var(--displei_spisk);
+}
+
+.sp li {
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: var(--margin_spisk);
+    border: 2px solid black;
+    border-radius: 10px;
+    
+    background-image: linear-gradient(180deg, rgba(255, 255, 255) 35%, rgba(100, 100, 100));
+}
+
+.sil {
+    display: block;
+    text-decoration-line: none;
+    color: black;
+}
+/* список покупок */
+.korzina {
+    text-align: center;
+}
+.chec {
+    display: var(--displei_spisk);
+    font-size: 1.2em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.im_0 {
+    width: var(--img_width);
+    height: var(--img_heign);
+    border-radius: 5px;
+}
+/* основной контент */
+.cont {
+    width: var(--main_width);
+    min-height: 100vh;
+    background-image: linear-gradient(90deg, rgba(177, 177, 177, 1), rgba(177, 177, 177, 0));
+}
+
+/* главная */
+.glavnai {
+    margin-left: 15px;
+    padding: 1px;
+}
+.zag {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.discrept {
+    margin-top: 0;
+    font-size: 20px;
+}
+.im_1 {
+    text-align: center;
+}
+/* металлоизделия */
+.metal {
+    display: flex;
+    flex-wrap: wrap;
+}
+.metal div {
+    width: 300px;
+    font-size: 20px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Футер */
+.fyt {
+    width: 100%;
+    height: 120px;
+    border-top: 1px solid black;
+    background-color: rgb(155, 155, 155);
+}
